@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/dialog_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/dialog_close"
+        app:layout_constraintEnd_toEndOf="@id/panel"
+        app:layout_constraintTop_toTopOf="@id/panel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84.5dp"
+        android:text="这是一个自定义的Dialog"
+        android:textColor="#d9000000"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/panel"
+        app:layout_constraintStart_toStartOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/dialog_btn"
+        android:gravity="center"
+        android:text="文案一"
+        android:textColor="#312516"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/panel"
+        app:layout_constraintStart_toStartOf="@+id/panel" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/dialog_btn"
+        android:gravity="center"
+        android:text="文案二"
+        android:textColor="#312516"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/panel"
+        app:layout_constraintEnd_toEndOf="@+id/panel" />
+
+</android.support.constraint.ConstraintLayout>
